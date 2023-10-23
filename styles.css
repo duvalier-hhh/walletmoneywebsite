@@ -29,15 +29,11 @@ html {
   animation-timing-function: linear;
 }
 .grid-container img {
-width: 100px;
-height: auto;
-top: 10px;
-left: 10px;
-
-
+  width: 100px;
+  height: auto;
+  top: 10px;
+  left: 10px;
 }
-
-
 
 .grid-item:nth-child(1) {
   background-color: dodgerblue;
@@ -92,5 +88,27 @@ left: 10px;
   }
   75% {
     background-color: #ffd700;
+  }
+}
+
+.animated {
+  animation: moveRectangles 4s linear infinite;
+}
+
+@keyframes moveRectangles {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+  75% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
