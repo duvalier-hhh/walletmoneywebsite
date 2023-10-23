@@ -10,7 +10,7 @@ html {
 }
 
 .grid-container {
-  background: linear-gradient(black, #3f00ff, #7b3f00,	#3f00ff);
+  background: linear-gradient(black, #3f00ff, #7b3f00, #3f00ff);
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
@@ -51,6 +51,22 @@ html {
   padding: 25%;
   z-index: 4;
 }
+
+.vector-element::before {
+  content: "";
+  background-image: url('images/graphics#1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100px; 
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+
+}
+
+
 
 @media (max-width: 600px) {
   .grid-container {
