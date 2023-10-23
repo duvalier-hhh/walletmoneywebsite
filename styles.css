@@ -10,6 +10,7 @@ html {
 }
 
 .grid-container {
+  background: linear-gradient( black, #3f00ff,#7B3F00 );
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
@@ -18,7 +19,6 @@ html {
   padding: 10%;
   position: relative;
 }
-
 
 .grid-item {
   border-radius: 50px;
@@ -75,7 +75,7 @@ html {
     background-color: #5d3fd3;
   }
   25% {
-    background-color: #7b3f00;
+    background-color: #FFBF00;
   }
   50% {
     background-color: #32cd32;
