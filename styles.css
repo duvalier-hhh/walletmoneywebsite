@@ -29,7 +29,6 @@ html {
   animation-timing-function: linear;
 }
 
-
 .grid-item:nth-child(1) {
   background-color: dodgerblue;
   padding: 25%;
@@ -107,4 +106,3 @@ html {
     transform: translateX(0);
   }
 }
-
