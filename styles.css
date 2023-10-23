@@ -28,12 +28,7 @@ html {
   animation: colorChange 4s infinite;
   animation-timing-function: linear;
 }
-.grid-container img {
-  width: 100px;
-  height: auto;
-  top: 10px;
-  left: 10px;
-}
+
 
 .grid-item:nth-child(1) {
   background-color: dodgerblue;
