@@ -10,7 +10,7 @@ html {
 }
 
 .grid-container {
-  background: linear-gradient(black, #3f00ff, #7b3f00);
+  background: linear-gradient(black, #3f00ff, #7b3f00,	#3f00ff);
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
