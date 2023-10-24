@@ -10,14 +10,16 @@ html {
 }
 
 .grid-container {
-  background: linear-gradient(black, #3f00ff, #7b3f00, #3f00ff);
+  background: linear-gradient(#7b3f00, #cc7722, #d27d2d, #7b3f00);
   display: grid;
   grid-template-columns: repeat(3, 200px);
   grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
-  grid-template-rows: [row1-start] repeat(3, 200px);
+  grid-template-rows: [row1-start] repeat(3, 230px);
+  border-radius: 30px;
   gap: 20px;
   padding: 10%;
   position: relative;
+  transform: rotate(90deg);
 }
 
 .grid-item {
@@ -27,10 +29,12 @@ html {
   animation: scale 3s infinite;
   animation: colorChange 4s infinite;
   animation-timing-function: linear;
+  transform: rotate(-90deg);
+  position: relative;
 }
 
 .grid-item:nth-child(1) {
-  background-color: dodgerblue;
+  background-image: linear-gradient(to right, #ff3131, #ffff00);
   padding: 25%;
   z-index: 1;
 }
@@ -38,11 +42,11 @@ html {
 .grid-item:nth-child(2) {
   background-color: #ffa500;
   padding: 25%;
-  z-index: 2;
+  z-index: 4;
 }
 
 .grid-item:nth-child(3) {
-  background-color: #ffd580;
+  background-image: linear-gradient(to right, #ff3131, #ffff00);
   padding: 25%;
   z-index: 3;
 }
@@ -51,22 +55,6 @@ html {
   padding: 25%;
   z-index: 4;
 }
-
-.vector-element::before {
-  content: "";
-  background-image: url('images/graphics#1.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 100px; 
-  height: 100px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: -1;
-
-}
-
-
 
 @media (max-width: 600px) {
   .grid-container {
@@ -88,13 +76,13 @@ html {
 }
 @keyframes colorChange {
   0% {
-    background-color: #5d3fd3;
+    background-color: #0437f2;
   }
   25% {
-    background-color: #e30b5c;
+    background-color: #d2042d;
   }
   50% {
-    background-color: #32cd32;
+    background-color: #818589;
   }
   75% {
     background-color: #ffd700;
@@ -102,6 +90,7 @@ html {
 }
 
 .animated {
+  
   animation: moveRectangles 4s linear infinite;
 }
 
@@ -122,3 +111,11 @@ html {
     transform: translateX(0);
   }
 }
+
+
+
+
+
+
+
+
