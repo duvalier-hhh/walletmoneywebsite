@@ -13,10 +13,10 @@ html {
   background: linear-gradient(#7b3f00, #cc7722, #d27d2d, #7b3f00);
   display: grid;
   grid-template-columns: repeat(3, 200px);
-  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
   grid-template-rows: [row1-start] repeat(3, 230px);
-  border-radius: 30px;
-  gap: 20px;
+  border-radius: 50px;
+  gap: 25px;
   padding: 10%;
   position: relative;
   transform: rotate(90deg);
@@ -40,7 +40,7 @@ html {
 }
 
 .grid-item:nth-child(2) {
-  background-color: #ffa500;
+  background-color: #FFFDD0;
   padding: 25%;
   z-index: 4;
 }
@@ -51,10 +51,30 @@ html {
   z-index: 3;
 }
 .grid-item:nth-child(4) {
-  background-color: #5d3fd3;
+  background-color:	#FCF5E5;
   padding: 25%;
   z-index: 4;
 }
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  position: relative;
+}
+
+.nav-link {
+  background-image: linear-gradient(#ffea00, #ffac1c, #fcf55f);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-link.hover {
+  background-image: linear-gradient(#ffea00, #ffac1c, #fcf55f);
+}
+
 
 @media (max-width: 600px) {
   .grid-container {
@@ -76,7 +96,7 @@ html {
 }
 @keyframes colorChange {
   0% {
-    background-color: #0437f2;
+    background-color: #F3E5AB;
   }
   25% {
     background-color: #d2042d;
@@ -85,12 +105,11 @@ html {
     background-color: #818589;
   }
   75% {
-    background-color: #ffd700;
+    background-color: 	#36454F;
   }
 }
 
 .animated {
-  
   animation: moveRectangles 4s linear infinite;
 }
 
@@ -111,11 +130,3 @@ html {
     transform: translateX(0);
   }
 }
-
-
-
-
-
-
-
-
