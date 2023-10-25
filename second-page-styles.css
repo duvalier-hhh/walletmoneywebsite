@@ -2,7 +2,7 @@ body,
 html {
   padding: 0;
   margin: 0;
-  background-color: #1F51FF;
+  background-color: #1f51ff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,15 +10,35 @@ html {
 }
 
 .grid-container {
-    background: linear-gradient(#7b3f00, #cc7722, #d27d2d, #7b3f00);
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
-    grid-template-rows: [row1-start] repeat(3, 230px);
-    border-radius: 50px;
-    gap: 25px;
-    padding: 10%;
-    position: relative;
-    transform: rotate(90deg);
-  }
-  
+  background: linear-gradient(#7b3f00, #cc7722, #d27d2d, #7b3f00);
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
+  grid-template-rows: [row1-start] repeat(3, 230px);
+  border-radius: 50px;
+  gap: 25px;
+  padding: 10%;
+  position: relative;
+  transform: rotate(90deg);
+}
+
+.grid-item {
+  border-radius: 50px;
+  padding: 25%;
+  transform: rotate(-90deg);
+  position: relative;
+}
+
+.grid-item:nth-child(1) {
+ 
+}
+
+.grid-item:nth-child(2) {
+    
+}
+
+.grid-item:nth-child(3) {
+}
+
+.grid-item:nth-child(4) {
+}
