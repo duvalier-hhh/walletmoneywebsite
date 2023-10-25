@@ -9,3 +9,16 @@ html {
   height: 100vh;
 }
 
+.grid-container {
+    background: linear-gradient(#7b3f00, #cc7722, #d27d2d, #7b3f00);
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
+    grid-template-rows: [row1-start] repeat(3, 230px);
+    border-radius: 50px;
+    gap: 25px;
+    padding: 10%;
+    position: relative;
+    transform: rotate(90deg);
+  }
+  
