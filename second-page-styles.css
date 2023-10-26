@@ -9,6 +9,19 @@ html {
   height: 100vh;
 }
 
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1f51ff;
+    width: 100%;
+    z-index: 1;
+  }
+
 .grid-container {
   background: linear-gradient(#7b3f00, #cc7722, #d27d2d, #7b3f00);
   display: grid;
