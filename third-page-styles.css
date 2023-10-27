@@ -1,0 +1,48 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #7fffd4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-item {
+  display: grid;
+  position: relative;
+}
+
+
+@keyframes upDownMotion {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    80% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes sideToSideMotion {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(40px);
+    }
+  }
+
+@media (max-width: 600px) {
+    .grid-item {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: 90%;
+    }
+  }
+
