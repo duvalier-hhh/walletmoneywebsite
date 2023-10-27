@@ -6,6 +6,8 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  animation: upDownMotion 10s ease-in-out infinite alternate;
+  animation: sideToSideMotion 3s ease-in-out infinite alternate;
   justify-content: center;
   align-items: center;
   height: 100vh;
