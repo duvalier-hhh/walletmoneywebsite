@@ -73,7 +73,6 @@ html {
   font-size: large;
 }
 
-
 @media (max-width: 600px) {
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -100,10 +99,10 @@ html {
     background-color: #d2042d;
   }
   50% {
-    background-color: #818589;
+    background-color:	#191970;
   }
   75% {
-    background-color: #36454f;
+    background-color: #0F52BA;
   }
 }
 
