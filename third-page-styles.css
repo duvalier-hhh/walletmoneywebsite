@@ -18,7 +18,6 @@ html {
   position: relative;
 }
 
-
 @keyframes upDownMotion {
   0%,
   100% {
@@ -38,6 +37,13 @@ html {
   }
   50% {
     transform: translateX(40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-item {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 90%;
   }
 }
 
