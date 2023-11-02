@@ -32,7 +32,7 @@ html {
 }
 
 .grid-item:nth-child(2) {
-  background-image: linear-gradient(#90ee90, #3F00FF, #0fff50);
+  background-image: linear-gradient(#90ee90, #3f00ff, #0fff50);
   padding: 25%;
   z-index: 4;
 }
@@ -44,14 +44,14 @@ html {
 }
 
 .grid-item:nth-child(4) {
-  background-image: linear-gradient(#89CFF0, #ADD8E6, 	#6495ED);
+  background-image: linear-gradient(#89cff0, #add8e6, #6495ed);
   padding: 25%;
   z-index: 4;
 }
 
 .nav-link {
   display: flex;
-  background-image: linear-gradient(white, #FFFDD0, #F5F5DC);
+  background-image: linear-gradient(white, #fffdd0, #f5f5dc);
   padding: 10px 20px;
   border-radius: 2px;
   text-decoration: none;
